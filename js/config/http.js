@@ -40,7 +40,7 @@ export async function apiFetch(path, { method = "GET", body, auth = false, query
   }
   
   // სტანდარტული ჰედერები (სერვერთან კომუნიკაციისთვის საჭირო API გასაღებით)
-  const headers = { "Accept": "application/json", "X-API-KEY": API_KEY };
+  const headers = { "Accept": "application/json", "X-STEP-KEY": API_KEY };
   
  // თუ მოთხოვნა ითხოვს ავტორიზაციას (auth: true), ჰედერში ამატებს Bearer Token-ს 
   if (body !== undefined) headers["Content-Type"] = "application/json";
